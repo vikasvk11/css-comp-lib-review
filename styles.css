@@ -1052,7 +1052,6 @@ a {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 
 .land-code-container > pre {
@@ -1114,4 +1113,45 @@ a {
 
 .land-logo > h1 {
     color: #3CA1CD;
+}
+
+@media (max-width: 420px) {
+    .land-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 1.5rem;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .land-nav {
+        position: relative;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 15px 0 #00000021;
+    }
+    
+    .land-nav > h1 {
+        color:rgba(99, 136, 158, 0.658);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        flex: 1 1;
+        color: #4d6e7c;
+        padding-left: 0.5rem;
+    }
+
+    .land-code {
+        position: relative;
+        transform: translateX(-50%);
+        max-width: 100%;
+    }
+
+    .land-code-container > pre {
+        max-width: 100%;
+    }
+    
 }
