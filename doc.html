@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alpha CSS | Documentation</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/alpha_favi.png" />
+    <link rel="stylesheet" href="./prism.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="./index.js"></script>
+    <script defer src="./alphacss.js"></script>
+    <script defer src="./prism.js"></script>
+</head>
+
+<body>
+    <div class="grid-main-container">
+        <div class="grid-main-header main-nav-bar">
+            <h1 class="main-nav-header"><img style="width: 2rem;" alt="logo" src="./images/alpha_logo.png">alpha CSS</h1>
+            <ul class="main-nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#avatar-a">Documentation</a></li>
+                <li><a href="#footer">About</a></li>
+            </ul>
+        </div>
+        <ul id="mainlink" class="grid-main-1">
+            <li><a class="links" href="#avatar-a">Avatar</a></li>
+            <li><a class="links" href="#alerts-a">Alerts</a></li>
+            <li><a class="links" href="#badges-a">Badges</a></li>
+            <li><a class="links" href="#buttons-a">Buttons</a></li>
+            <li><a class="links" href="#cards-a">Cards</a></li>
+            <li><a class="links" href="#images-a">Images</a></li>
+            <li><a class="links" href="#forms-a">Forms</a></li>
+            <li><a class="links" href="#lists-a">Lists</a></li>
+            <li><a class="links" href="#nav-a">Navigation</a></li>
+            <li><a class="links" href="#modal-a">Modal</a></li>
+            <li><a class="links" href="#text-a">Text Utilities</a></li>
+            <li><a class="links" href="#toast-a">Toast</a></li>
+            <li><a class="links" href="#grid-a">Grid</a></li>
+        </ul>
+        <div class="grid-main-2">
+
+            <h2 class="component-headers" style="margin-top: 0;" id="avatar-a">Avatar</h2>
+
+            <div class="badge-avatar-sm">
+                <img class="avatar-sm" src="./images/Profile_large.png">
+                <span></span>
+            </div>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <div class="badge-avatar-md">
+                <img class="avatar-md" src="./images/Profile_large.png">
+                <span></span>
+            </div>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <div class="badge-avatar-lg">
+                <img class="avatar-lg" src="./images/Profile_large.png">
+                <span></span>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy avatar">
+                    content_copy
+                    </span>
+                    <code  class="language-html avatar" id="code">
+&lt;div class="badge-avatar-sm"&gt;
+    &lt;img class="avatar-sm" src="./images.."&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="badge-avatar-md"&gt;
+    &lt;img class="avatar-md" src="./images.."&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="badge-avatar-lg"&gt;
+    &lt;img class="avatar-lg" src="./images.."&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="alerts-a">Alerts</h2>
+
+            <div class="alert-container">
+                <div class="primary-alert">
+                    Hey! This is a primary alert.
+                </div>
+                <br>
+                <div class="warn-alert">
+                    Hey! This is a danger alert.
+                </div>
+                <br>
+                <div class="success-alert">
+                    Hey! This is a success alert.
+                </div>
+                <br>
+                <div class="secondary-alert">
+                    Hey! This is a secondary alert.
+                </div>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy alert">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html alert">
+&lt;div class="primary-alert"&gt;
+    Hey! This is a primary alert.
+&lt;/div&gt;
+                   
+&lt;div class="warn-alert"&gt;
+    Hey! This is a danger alert.
+&lt;/div&gt;
+
+&lt;div class="success-alert"&gt;
+    Hey! This is a success alert.
+&lt;/div&gt;
+
+&lt;div class="secondary-alert"&gt;
+    Hey! This is a secondary alert.
+&lt;/div&gt;
+</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="badges-a">Badges</h2>
+
+            <h3 class="component-sub-headers">Badges on Icons</h3>
+            <br>
+            <div class="badge-icon">
+                <img src="./images/carticon.png">
+                <span>10</span>
+            </div>
+
+            <div class="badge-icon-pr">
+                <i style="font-size: 40px" class="material-icons">
+                    notifications
+                </i>
+                <span>5</span>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy badge">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html badge">
+&lt;div class="badge-icon"&gt;
+    &lt;img src="c/imagesarticon.png"&gt;
+        &lt;span&gt;10&lt;/span&gt;
+&lt;/div&gt;
+            
+&lt;div class="badge-icon-pr"&gt;
+    &lt;i style="font-size: 40px" class="material-icons"&gt;
+        notifications
+    &lt;/i&gt;
+    &lt;span&gt;5&lt;/span&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+            </div>
+
+            <div class="copy-toast">
+                <p>Copied!</p>
+            </div>
+
+            <h2 class="component-headers" id="buttons-a">Buttons</h2>
+
+            <button class="btn-primary">Primary</button>
+            <button class="btn-secondary">Secondary</button>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <button class="btn-icon"><i class="material-icons">home</i></button>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <a class="btn-link" href="">Click Here</a>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <button class="btn-float"><i class="material-icons">zoom_in</i><span class="tooltip">float
+                    btn</span></button>
+            <button class="btn-primary-outline">Primary</button>
+            <button class="btn-secondary-outline">Secondary</button>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy btn">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html btn">
+&lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
+
+&lt;button class="btn-secondary"&gt;Secondary&lt;/button&gt;
+                      
+&lt;button class="btn-icon"&gt;&lt;i class="material-icons"&gt;home&lt;/i&gt;&lt;/button&gt;
+                      
+&lt;a class="btn-link" href=""&gt;Click Here&lt;/a&gt;
+                       
+&lt;button class="btn-float"&gt;
+    &lt;i class="material-icons"&gt;zoom_in&lt;/i&gt;
+    &lt;span class="tooltip"&gt;floatbtn&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="btn-primary-outline"&gt;Primary&lt;/button&gt;
+
+&lt;button class="btn-secondary-outline"&gt;Secondary&lt;/button&gt;
+</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="cards-a">Cards</h2>
+
+            <div class="card-container">
+                <div class="simple-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                    <span>X</span>
+                </div>
+                <br>
+                <div class="badge-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                    <span>New</span>
+                </div>
+                <br>
+                <div class="horizontal-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum
+                        ut.Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                </div>
+                <br>
+                <div class="image-card">
+                    <img src="./images/download.png">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                </div>
+                <br>
+                <div class="product-card">
+                    <img src="./images/product_img.jpg">
+                    <p class="card-title">Rolleiflex</p>
+                    <p class="product-desc">Antique Camera</p>
+                    <p class="product-rating">4.9 <span class="material-icons">grade</span></p>
+                    <p class="product-price">&#8377;255 <del>&#8377;999</del> <span>75%off</span></p>
+                    <span class="product-badge">Very Old</span>
+                    <span class="wishlist-badge material-icons">favorite</span>
+                </div>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy card">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html card">
+&lt;div class="simple-card"&gt;
+    &lt;h2&gt;Card Title&lt;/h2&gt;
+    &lt;p&gt;Some text....&lt;/p&gt;
+    &lt;span&gt;X&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="badge-card"&gt;
+    &lt;h2&gt;Card Title&lt;/h2&gt;
+    &lt;p&gt;Some text....&lt;/p&gt;
+    &lt;span&gt;New&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="horizontal-card"&gt;
+    &lt;h2&gt;Card Title&lt;/h2&gt;
+    &lt;p&gt;Some text....&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="image-card"&gt;
+    &lt;img src="./images.."&gt;
+    &lt;h2&gt;Card Title&lt;/h2&gt;
+    &lt;p&gt;Some text....&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="product-card"&gt;
+    &lt;img src="./images.."&gt;
+    &lt;p class="card-title"&gt;Rolleiflex&lt;/p&gt;
+    &lt;p class="product-desc"&gt;Camera&lt;/p&gt;
+    &lt;p class="product-rating"&gt;4.9 
+        &lt;span class="material-icons"&gt;grade&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p class="product-price"&gt;&#8377;255 
+        &lt;del&gt;&#8377;999&lt;/del&gt; &lt;span&gt;75%off&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;span class="product-badge"&gt;Very Old&lt;/span&gt;
+    &lt;span class="wishlist-badge material-icons"&gt;favorite&lt;/span&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="images-a">Images</h2>
+
+            <h3 class="component-sub-headers">Responsive Image</h3>
+            <div>
+                <img class="responsive-img" src="./images/resp_img.jpg">
+            </div>
+
+            <h3 class="component-sub-headers">Rounded Image</h3>
+
+            <div>
+                <img class="round-img" src="./images/sq_img.jpg">
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy img">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html img">
+&lt;div&gt;
+    &lt;img class="responsive-img" src="./images.."&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    &lt;img class="round-img" src="./images.."&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="forms-a">Form</h2>
+
+            <textarea class="textbox"></textarea>
+            <br>
+            <br>
+            <form class="form-container">
+                <h1 class="form-header">Sign In</h1>
+                <div class="input-container">
+                    <label for="url_input">Email Address</label>
+                    <input type="url" id="url_input">
+                </div>
+
+                <div class="input-container">
+                    <label for="email_input">Password</label>
+                    <input type="email" id="email_input" required>
+                </div>
+                <div class="btn-submit-container">
+                    <button class="btn-primary btn-submit" type="submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy form">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html form">
+&lt;textarea class="textbox">&lt;/textarea&gt;
+
+&lt;form class="form-container"&gt;
+    &lt;h1 class="form-header"&gt;Sign In&lt;/h1&gt;
+    &lt;div class="input-container"&gt;
+        &lt;label for="url_input"&gt;Email Address&lt;/label&gt;
+        &lt;input type="url" id="url_input"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="input-container"&gt;
+        &lt;label for="email_input"&gt;Password&lt;/label&gt;
+        &lt;input type="email" id="email_input" required&gt;
+    &lt;/div&gt;
+    &lt;div class="btn-submit-container"&gt;
+        &lt;button class="btn-primary btn-submit" type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="lists-a">Lists</h2>
+
+            <h3 class="component-sub-headers">Spaced List</h3>
+            <ul class="spaced-list-container">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+            </ul>
+
+            <h3 class="component-sub-headers">Stacked List</h3>
+
+            <ul class="stacked-list-container">
+                <li class="list-item">
+                    <img src="./images/list_logo.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc a
+                        egestas nibh.</p>
+                    <span class="material-icons">close</span>
+                </li>
+                <li class="list-item">
+                    <img src="./images/list_logo.jpg">
+                    <p>Etiam auctor nisi odio, vitae vulputate neque bibendum ut. </p>
+                    <span class="material-icons">close</span>
+                </li>
+                <li class="list-item">
+                    <img src="./images/list_logo.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc a
+                        egestas nibh.</p>
+                    <span class="material-icons">close</span>
+                </li>
+                <li class="list-item">
+                    <img src="./images/list_logo.jpg">
+                    <p>Etiam auctor nisi odio, vitae vulputate neque bibendum ut.Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="material-icons">close</span>
+                </li>
+                <li class="list-item">
+                    <img src="./images/list_logo.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc a
+                        egestas nibh.</p>
+                    <span class="material-icons">close</span>
+                </li>
+            </ul>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy list">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html list">
+&lt;ul class="spaced-list-container"&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+    &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;li&gt;List Item 4&lt;/li&gt;
+    &lt;li&gt;List Item 5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="stacked-list-container"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;img src="./images/list_logo.jpg"&gt;
+        &lt;p&gt;Lorem ipsum ...&lt;/p&gt;
+        &lt;span class="material-icons"&gt;close&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item"&gt;
+        &lt;img src="./images/list_logo.jpg"&gt;
+        &lt;p&gt;Etiam auctor... &lt;/p&gt;
+        &lt;span class="material-icons"&gt;close&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item"&gt;
+        &lt;img src="./images/list_logo.jpg"&gt;
+        &lt;p&gt;Lorem ipsum..&lt;/p&gt;
+        &lt;span class="material-icons"&gt;close&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item"&gt;
+        &lt;img src="./images/list_logo.jpg"&gt;
+        &lt;p&gt;Etiam auctor..&lt;/p&gt;
+        &lt;span class="material-icons"&gt;close&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item"&gt;
+        &lt;img src="./images/list_logo.jpg"&gt;
+        &lt;p&gt;Lorem ipsum dolor....&lt;/p&gt;
+        &lt;span class="material-icons"&gt;close&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="nav-a">Navigation</h2>
+
+            <h3 class="component-sub-headers">Desktop Nav</h3>
+
+            <nav class="nav-bar">
+                <h1 class="nav-header">Company Title</h1>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>Blog</li>
+                    <li>Tools</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy nav">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html nav">
+&lt;nav class="nav-bar"&gt;
+    &lt;h1 class="nav-header"&gt;Company Title&lt;/h1&gt;
+    &lt;ul class="nav-list"&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Products&lt;/li&gt;
+        &lt;li&gt;Blog&lt;/li&gt;
+        &lt;li&gt;Tools&lt;/li&gt;
+        &lt;li&gt;About&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+            </div>
+
+            <h2 class="component-headers" id="modal-a">Modal</h2>
+
+            <button class="btn-primary-outline modal-btn">Show Modal</button>
+
+            <div class="modal-bg">
+                <div class="modal">
+                    <h1>Modal Header <span class="material-icons modal-close">close</span></h1>
+                    <p>Some description that goes in the modal.</p>
+                    <button class="btn-primary">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy modall">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html modall">
+&lt;div class="modal-bg"&gt;
+    &lt;div class="modal"&gt;
+        &lt;h1&gt;Modal Header &lt;span class="material-icons modal-close"&gt;close&lt;/span&gt;&lt;/h1&gt;
+        &lt;p&gt;Some description that goes in the modal.&lt;/p&gt;
+        &lt;button class="btn-primary"&gt;Subscribe&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+            </div>
+
+            <h2 class="component-headers" id="text-a">Text Utilities</h2>
+
+            <p class="hd-1 mg-1">H1 equivalent</p>
+            <p class="hd-2 mg-1">H2 equivalent</p>
+            <p class="hd-3 mg-1">H3 equivalent</p>
+            <p class="hd-4 mg-1">H4 equivalent</p>
+            <p class="hd-5 mg-1">H5 equivalent</p>
+            <p class="center-text mg-1">This is a centered text</p>
+            <p class="grey-text mg-1">This is a grey text!</p>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy txt">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html txt">
+&lt;p class="hd-1 mg-1"&gt;H1 equivalent&lt;/p&gt;
+&lt;p class="hd-2 mg-1"&gt;H2 equivalent&lt;/p&gt;
+&lt;p class="hd-3 mg-1"&gt;H3 equivalent&lt;/p&gt;
+&lt;p class="hd-4 mg-1"&gt;H4 equivalent&lt;/p&gt;
+&lt;p class="hd-5 mg-1"&gt;H5 equivalent&lt;/p&gt;
+&lt;p class="center-text mg-1"&gt;This is a centered text&lt;/p&gt;
+&lt;p class="grey-text mg-1"&gt;This is a grey text!&lt;/p&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="toast-a">Toast</h2>
+
+            <div class="toast">
+                <p>A toast to all of you! </p>
+                <span class="material-icons">close</span>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy tst">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html tst">
+&lt;div class="toast"&gt;
+    &lt;p&gt;A toast to all of you! &lt;/p&gt;
+    &lt;span class="material-icons"&gt;close&lt;/span&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
+            <h2 class="component-headers" id="grid-a">Grid</h2>
+
+            <h3 class="component-sub-headers">2-Column grid</h3>
+
+            <div class="grid-container-2">
+                <div class="grid-item-1-2">Grid Item 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                    magnam consequuntur iusto
+                    maxime iste quis aut laudantium ratione, quam placeat necessitatibus? Quasi laboriosam molestias
+                    veritatis
+                    quis iste! Magnam, eligendi nostrum.</div>
+                <div class="grid-item-2-2">Grid Item 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium error fuga quasi nostrum
+                    incidunt et natus suscipit dolor vitae architecto.</div>
+            </div>
+            <h3 class="component-sub-headers">3-Column grid</h3>
+            <div class="grid-container-3">
+                <div class="grid-item-1-3">Grid Item 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                    magnam consequuntur iusto
+                    maxime iste quis aut laudantium ratione, quam placeat necessitatibus? Quasi laboriosam molestias.
+                </div>
+                <div class="grid-item-2-3">Grid Item 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium error fuga quasi nostrum
+                    incidunt et natus suscipit dolor vitae architecto.</div>
+                <div class="grid-item-3-3">Grid Item 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium error fuga quasi nostrum
+                    incidunt et natus suscipit dolor vitae architecto.</div>
+            </div>
+
+            <div class="code-container">
+                <pre><span class="material-icons copy grd">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html grd">
+&lt;div class="grid-container-2"&gt;
+    &lt;div class="grid-item-1-2"&gt;Grid Item 1: Lorem ipsum ....&lt;/div&gt;
+    &lt;div class="grid-item-2-2"&gt;Grid Item 2: Lorem ipsum ....&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-container-3"&gt;
+    &lt;div class="grid-item-1-3"&gt;Grid Item 1: Lorem ipsum ....&lt;/div&gt;
+    &lt;div class="grid-item-2-3"&gt;Grid Item 2: Lorem ipsum ....&lt;/div&gt;
+    &lt;div class="grid-item-3-3"&gt;Grid Item 3: Lorem ipsum ....&lt;/div&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
+            <div class="footer" id="footer">
+                <h1>Connect with me on</h1>
+                <div class="footer-img">
+                    <a href="https://vikasvk.netlify.app/"><img src="./images/websiteW.png"></a>
+                    <a href="https://www.instagram.com/vikasvk_/"><img src="./images/instagramW.png"></a>
+                    <a href="https://www.linkedin.com/in/vikas-v-k-a613bb138/"><img src="./images/LinkedINW.png"></a>
+                    <a href="https://twitter.com/vikasvk_"><img src="./images/twitterW.png"></a>
+                    <a href="https://github.com/vikasvk11"><img src="./images/GitHub-MarkW.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
