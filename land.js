@@ -2,6 +2,9 @@ var copyBtn = document.querySelectorAll('.copy');
 
 var toast = document.querySelector('.copy-toast');
 
+var mobileNavBar = document.querySelector('.land-nav-list');
+var menuBtn = document.querySelector('.land-menu');
+
 
 function copyText(str) {
     console.log(str);
@@ -17,3 +20,8 @@ function copyText(str) {
 }
 
 Array.prototype.map.call(copyBtn, item => item.addEventListener('click', () => copyText(item.classList[2])));
+
+menuBtn.addEventListener('click', () => {
+    mobileNavBar.classList.toggle('active');
+    console.log("yay");
+})
