@@ -8,16 +8,16 @@ var toast = document.querySelector('.copy-toast');
 var mainMenu = document.querySelector('.main-menu');
 var dropDown = document.querySelector('.grid-main-1');
 
-for (var i=0; i<btns.length; i++) {
+// for (var i=0; i<btns.length; i++) {
 
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        if(current.length>0){
-            current[0].className = current[0].className.replace(" active", "");
-        }
-        this.className += " active";
-    });
-}
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         if(current.length>0){
+//             current[0].className = current[0].className.replace(" active", "");
+//         }
+//         this.className += " active";
+//     });
+// }
 
 function copyText(str) {
     console.log(str);
@@ -36,7 +36,9 @@ Array.prototype.map.call(copyBtn, item => item.addEventListener('click', () => c
 
 mainMenu.addEventListener('click', () => {
     dropDown.classList.toggle('active');
+    console.log('clicked');
     if(dropDown.classList.length === 2) {
         mainMenu.innerText = 'close';
+        console.log('clicked 2');
     } else mainMenu.innerText = 'menu';
 })

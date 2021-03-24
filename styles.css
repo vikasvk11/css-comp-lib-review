@@ -190,6 +190,13 @@ a {
 
 .links:hover {
     color: #317fa0;
+    font-weight: 500;
+}
+
+.links:focus {
+    color: #317fa0;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .avatar-sm {
@@ -1227,7 +1234,7 @@ a {
 
     .grid-main-1 {
         position: fixed;
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -1236,10 +1243,11 @@ a {
         background-color: #f7f7f7;
         z-index: 2;
         box-shadow: 0px 15px 15px 0px #00000013;
+        visibility: hidden;
     }
 
     .grid-main-1.active {
-        display: flex;
+        visibility: visible;
     }
 
     .grid-main-1 > li {
@@ -1293,6 +1301,52 @@ a {
 
     .badge-avatar-sm, .badge-avatar-md, .badge-avatar-lg {
         margin: 0 0.5rem;
+    }
+
+    .component-headers, .component-sub-headers {
+        margin-left: 1rem;
+    }
+
+    .alert-container {
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .badge-icon, .badge-icon-pr {
+        margin: 0 1rem;
+    }
+
+     .btn-primary-outline, .btn-secondary, .btn-secondary-outline, .btn-icon, .btn-link {
+        margin: 1rem 1rem;
+    }
+
+    .horizontal-card {
+        width: 90%;
+    }
+
+    .round-img {
+        margin: 1rem;
+    }
+
+    .spaced-list-container {
+        margin: 0 1rem;
+    }
+
+    .mg-1 {
+        margin: 1rem;
+    }
+
+    .toast {
+        margin: 0 1rem;
+    }
+
+    .grid-container-2 {
+        margin: 0 1rem;
+    }
+
+    .grid-container-3 {
+        gap: 10px;
+        margin: 0 1rem;
     }
 
 }
