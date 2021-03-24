@@ -1223,7 +1223,7 @@ a {
 
     .grid-main-1 {
         position: fixed;
-        display: flex;
+        display: none;
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -1232,6 +1232,10 @@ a {
         background-color: #f7f7f7;
         z-index: 2;
         box-shadow: 0px 15px 15px 0px #00000013;
+    }
+
+    .grid-main-1.active {
+        display: flex;
     }
 
     .grid-main-1 > li {
@@ -1276,8 +1280,15 @@ a {
         z-index: 2;
         width: 100%;
         background-color: #f1f0f0;
-        box-shadow: 0px 15px 15px 0px #00000013;
+        box-shadow: 0px 5px 8px 0px #00000017;
+    }
 
+    #avatar-a {
+        margin-top: 52px;
+    }
+
+    .badge-avatar-sm, .badge-avatar-md, .badge-avatar-lg {
+        margin: 0 0.5rem;
     }
 
 }

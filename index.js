@@ -5,6 +5,9 @@ var copyBtn = document.querySelectorAll('.copy');
 
 var toast = document.querySelector('.copy-toast');
 
+var mainMenu = document.querySelector('.main-menu');
+var dropDown = document.querySelector('.grid-main-1');
+
 for (var i=0; i<btns.length; i++) {
 
     btns[i].addEventListener("click", function () {
@@ -30,3 +33,10 @@ function copyText(str) {
 }
 
 Array.prototype.map.call(copyBtn, item => item.addEventListener('click', () => copyText(item.classList[2])));
+
+mainMenu.addEventListener('click', () => {
+    dropDown.classList.toggle('active');
+    if(dropDown.classList.length === 2) {
+        mainMenu.innerText = 'close';
+    } else mainMenu.innerText = 'menu';
+})
