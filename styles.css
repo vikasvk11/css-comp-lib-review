@@ -1136,6 +1136,10 @@ a {
     right: 0;
 }
 
+.badge-avatar-sm, .badge-avatar-md, .badge-avatar-lg {
+    margin: 0 0.5rem;
+}
+
 
 @media all and (max-width: 420px) {
     .land-container {
