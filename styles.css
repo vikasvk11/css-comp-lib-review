@@ -1147,6 +1147,10 @@ a {
     margin: 0 0.5rem;
 }
 
+.top-btn {
+    color: white;
+}
+
 
 @media all and (max-width: 420px) {
     .land-container {
@@ -1381,6 +1385,11 @@ a {
 
     .modal {
         width: 90%;
+    }
+
+    .btn-float {
+        bottom: 1rem;
+        right: 1rem;
     }
 
 }
