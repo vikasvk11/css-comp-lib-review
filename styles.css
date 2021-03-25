@@ -129,7 +129,7 @@ a {
 
 .main-nav-header {
     flex: 2 1;
-    color: #4d6e7c;
+    color: #3CA1CD;
     padding-left: 5rem;
 }
 
@@ -1203,7 +1203,6 @@ a {
         flex: 1 1;
         color: #4d6e7c;
         padding-left: 1.8rem;
-
     }
 
     .land-code {
@@ -1276,6 +1275,7 @@ a {
     .main-nav-header {
         font-size: 1rem;
         padding: 0;
+        text-decoration: none;
     }
 
     .main-nav-header > img {
@@ -1347,6 +1347,40 @@ a {
     .grid-container-3 {
         gap: 10px;
         margin: 0 1rem;
+    }
+
+    pre {
+        width: 100%;
+    }
+
+    .code-container {
+        margin-right: 0.5rem;
+    }
+
+    #code {
+        font-size: 12px;
+    }
+
+    .stacked-list-container > li {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-header {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .nav-list > li {
+        font-size: 0.8rem;
+    }
+
+    .nav-list {
+        flex: 2 1;
+    }
+
+    .modal {
+        width: 90%;
     }
 
 }
