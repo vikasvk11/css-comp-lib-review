@@ -414,6 +414,8 @@ a {
     padding: 0.5rem 0.5rem;
     border-radius: 1rem;
     cursor: pointer;
+    display: inline-block;
+
 }
 
 .btn-link:hover {
