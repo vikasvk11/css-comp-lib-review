@@ -36,9 +36,11 @@ Array.prototype.map.call(copyBtn, item => item.addEventListener('click', () => c
 
 mainMenu.addEventListener('click', () => {
     dropDown.classList.toggle('active');
-    console.log('clicked');
-    if(dropDown.classList.length === 2) {
-        mainMenu.innerText = 'close';
-        console.log('clicked 2');
-    } else mainMenu.innerText = 'menu';
 })
+
+for (var i=0; i<btns.length; i++) {
+
+        btns[i].addEventListener("click", function () {
+            dropDown.classList.toggle('active');
+        });
+    }

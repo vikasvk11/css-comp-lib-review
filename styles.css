@@ -230,6 +230,20 @@ a {
     color: rgb(46, 98, 116);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    position: relative;
+}
+
+.alert-close {
+    position: absolute;
+    top: 30%;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    color: #1f4f6471;
+    cursor: pointer;
+}
+
+.alert-close:hover {
+    color: rgb(109, 109, 109);
 }
 
 .warn-alert {
@@ -238,6 +252,7 @@ a {
     color: #DA4167;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .success-alert {
@@ -246,6 +261,7 @@ a {
     color: rgb(48, 116, 46);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .secondary-alert {
@@ -254,6 +270,7 @@ a {
     color: rgb(99, 99, 99);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .badge-icon {
@@ -515,6 +532,12 @@ a {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+}
+
+.simple-card > span:hover {
+    color: black;
 }
 
 .badge-card {
@@ -720,6 +743,7 @@ a {
     outline: none;
     border: 1px solid #3ca2cdb7;
     margin: 1rem;
+    padding: 1%;
 }
 
 .textbox:focus {
@@ -796,7 +820,7 @@ a {
     padding: 0;
 }
 
-.stacked-list-container>li {
+.list-item {
     display: flex;
     flex-direction: row;
     width: 40rem;
@@ -806,18 +830,24 @@ a {
     align-items: center;
 }
 
-.stacked-list-container>li>img {
+.list-item>img {
     width: 4rem;
 }
 
-.stacked-list-container>li>p {
+.list-item>p {
     width: 31rem;
     font-size: small;
 }
 
-.stacked-list-container>li>span {
+.list-item>span {
     width: 1rem;
     align-self: center;
+    cursor: pointer;
+    color: rgb(146, 146, 146);
+}
+
+.list-item > span:hover {
+    color: rgb(66, 66, 66);
 }
 
 .nav-bar {
@@ -988,6 +1018,11 @@ a {
     gap: 40px;
 }
 
+.grid-item-1-3, .grid-item-2-3, .grid-item-3-3  {
+    padding: 0.5rem;
+    border: 1px solid rgb(202, 202, 202)
+}
+
 .mg-1 {
     margin: 1rem 0;
 }
@@ -1151,8 +1186,99 @@ a {
     color: white;
 }
 
+ @media all and (max-width: 900px) and (min-width: 421px) {
+    .land-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 1.5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+    }
+
+    .land-code {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .land-code-container {
+        margin: 0 auto;
+    }
+
+    .land-code-container > pre {
+        width: 25rem;
+    }
+
+    .land-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+  
+    }
+
+    .land-menu {
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        color: #3CA1CD;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    .land-nav-list {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        display: none;
+        position: fixed;
+        background-color: white;
+        top: 51px;
+        padding-bottom: 1rem;
+        box-shadow: 0px 15px 15px 0px #00000021;
+    }
+
+    .land-nav-list.active {
+        display: flex;
+    }
+
+    .land-nav-list > li {
+        padding: 0.4rem 0;
+    }
+
+    .land-nav-list > li > a{
+        color: #2d6f8bcc;
+    }
+
+    .land-nav > h1 {
+        color:rgba(99, 136, 158, 0.658);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        flex: 1 1;
+        color: #4d6e7c;
+        padding-left: 1.8rem;
+    }
+
+    .land-menu {
+        visibility: visible;
+    }
+
+} 
+
+
 
 @media all and (max-width: 420px) {
+
     .land-container {
         display: flex;
         justify-content: space-around;
@@ -1349,8 +1475,12 @@ a {
     }
 
     .grid-container-3 {
-        gap: 10px;
+        gap: 0px;
         margin: 0 1rem;
+    }
+
+    .grid-item-1-3, .grid-item-2-3, .grid-item-3-3  {
+        padding: 0.2rem;
     }
 
     pre {
