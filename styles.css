@@ -130,7 +130,7 @@ a {
 .main-nav-header {
     flex: 2 1;
     color: #3CA1CD;
-    padding-left: 5rem;
+    padding-left: 1rem;
 }
 
 .main-nav-list {
@@ -1188,11 +1188,18 @@ a {
     color: white;
 }
 
- @media all and (max-width: 900px) and (min-width: 421px) {
+ @media all and (max-width: 900px) and (min-width: 634px) {
     .land-body {
         height: auto;
         overflow: auto;
      }
+
+     .main-nav-header {
+        flex: 1 1;
+        color: #3CA1CD;
+        padding-left: 0rem;
+        font-size: 1.5rem;
+    }
 
     .land-container {
         display: flex;
@@ -1210,7 +1217,7 @@ a {
         bottom: 5%;
         left: 50%;
     }
-    
+
     .land-code-container {
         margin: 0 auto;
     }
@@ -1283,7 +1290,7 @@ a {
 
 
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 633px) {
 
     .land-container {
         display: flex;
