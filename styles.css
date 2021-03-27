@@ -1189,6 +1189,11 @@ a {
 }
 
  @media all and (max-width: 900px) and (min-width: 421px) {
+    .land-body {
+        height: auto;
+        overflow: auto;
+     }
+
     .land-container {
         display: flex;
         justify-content: space-around;
@@ -1198,15 +1203,14 @@ a {
         height: auto;
         gap: 50px;
     }
-
     .land-code {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        transform: translateX(-50%);
         margin: 2rem 0;
+        bottom: 5%;
+        left: 50%;
     }
-
+    
     .land-code-container {
         margin: 0 auto;
     }
@@ -1265,13 +1269,6 @@ a {
         font-size: 1rem;
     }
 
-    .land-code {
-        position: fixed;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .nav-header {
         flex: 1 1;
         color: #4d6e7c;
@@ -1320,12 +1317,6 @@ a {
   
     }
 
-    .land-code {
-        position: fixed;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .land-nav-list.active {
         display: flex;
@@ -1355,6 +1346,8 @@ a {
         position: relative;
         transform: translateX(-50%);
         margin: 2rem 0;
+        bottom: 5%;
+        left: 50%;
     }
 
     .land-code-container {
