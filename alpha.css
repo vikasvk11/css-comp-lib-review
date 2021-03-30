@@ -167,6 +167,7 @@ a {
     justify-self: center;
     list-style: none;
     width: 80%;
+    overflow-y: auto;
 }
 
 .grid-main-1 > li {
@@ -727,7 +728,9 @@ a {
 }
 
 .product-card > img{
-    max-width: 100%;
+    width: 17rem;
+    max-height: 20rem;
+    object-fit: cover;
 }
 
 .responsive-img {
@@ -986,7 +989,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 10px 0px rgb(212, 212, 212);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.219);
+    position: fixed;
+    bottom: 5%;
+    right: 35%;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s;
+    visibility: hidden;
+}
+
+.toast-visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .toast > p {
@@ -998,6 +1013,7 @@ a {
     flex: 1 1;
     color:rgb(209, 209, 209);
     cursor: pointer;
+    font-size: 19px;
 }
 
 .toast > span:hover {
@@ -1180,6 +1196,7 @@ a {
     display: none;
     position: fixed;
     right: 0;
+    cursor: pointer;
 }
 
 .badge-avatar-sm, .badge-avatar-md, .badge-avatar-lg {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./prism.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./alpha.css">
     <script defer src="./index.js"></script>
     <script defer src="./alphacss.js"></script>
     <script defer src="./prism.js"></script>
@@ -355,13 +355,13 @@
             <form class="form-container">
                 <h1 class="form-header">Sign In</h1>
                 <div class="input-container">
-                    <label for="url_input">Email Address</label>
-                    <input type="url" id="url_input">
+                    <label for="email_input">Email Address</label>
+                    <input type="email" id="email_input">
                 </div>
 
                 <div class="input-container">
-                    <label for="email_input">Password</label>
-                    <input type="email" id="email_input" required>
+                    <label for="password_input">Password</label>
+                    <input type="password" id="password_input" required>
                 </div>
                 <div class="btn-submit-container">
                     <button class="btn-primary btn-submit" type="submit">Submit</button>
@@ -378,13 +378,13 @@
 &lt;form class="form-container"&gt;
     &lt;h1 class="form-header"&gt;Sign In&lt;/h1&gt;
     &lt;div class="input-container"&gt;
-        &lt;label for="url_input"&gt;Email Address&lt;/label&gt;
-        &lt;input type="url" id="url_input"&gt;
+        &lt;label for="email_input"&gt;Email Address&lt;/label&gt;
+        &lt;input type="email" id="email_input"&gt;
     &lt;/div&gt;
 
     &lt;div class="input-container"&gt;
-        &lt;label for="email_input"&gt;Password&lt;/label&gt;
-        &lt;input type="email" id="email_input" required&gt;
+        &lt;label for="passoword_input"&gt;Password&lt;/label&gt;
+        &lt;input type="password" id="password_input" required&gt;
     &lt;/div&gt;
     &lt;div class="btn-submit-container"&gt;
         &lt;button class="btn-primary btn-submit" type="submit"&gt;Submit&lt;/button&gt;
@@ -571,9 +571,11 @@
 
             <h2 class="component-headers" id="toast-a">Toast</h2>
 
+            <button class="btn-primary-outline toast-btn">Show Toast</button>
+
             <div class="toast">
                 <p>A toast to all of you! </p>
-                <span class="material-icons">close</span>
+                <span class="material-icons toast-close">close</span>
             </div>
 
             <div class="code-container">
