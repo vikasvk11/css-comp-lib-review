@@ -648,7 +648,7 @@ a {
 
 .product-badge {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 20px;
     font-size: 0.8rem;
     background-color: #DA4167;
@@ -658,26 +658,15 @@ a {
 
 .wishlist-badge {
     position: absolute;
-    right: 0;
-    top: 50%;
-    background-color: rgba(255, 255, 255, 0.747);
-    color:rgb(185, 185, 185);
-    padding: 0.2rem 0.4rem;
-    visibility: hidden;
-    opacity: 0;
+    right: 10px;
+    top: 10px;
+    color:rgb(165, 165, 165);
     transition: opacity 0.2s;
     cursor: pointer;
 }
 
 .product-card:hover {
     box-shadow: 0px 0px 15px 0 rgb(223, 223, 223);
-}
-
-.product-card:hover > .wishlist-badge{
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.4s;
-    color: #DA4167;
 }
 
 .card-title {
